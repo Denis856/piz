@@ -93,6 +93,47 @@
    }
 }
 
+@media(max-width: 800px) {
+   .header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+   }
+   .show {
+      top: -120px;
+   }
+   .down {
+      transform: translateY(-120px);
+   }
+   .thank {
+      width: 300px;
+      height: 190px;
+      font-size: 33px;
+      line-height: 44px;
+   }
+}
+
+@media(max-width: 701px) {
+   .show {
+      top: -100px;
+   }
+   .btn4 {
+      display: flex;
+      justify-content: end;
+      padding: 40px 20px 0 0;
+   }
+   .tan {
+      padding-right: 150px;
+   }
+   .thank {
+      width: 250px;
+      height: 190px;
+      font-size: 30px;
+      line-height: 40px;
+   }
+}
+
 @media(max-width: 700px) {
    .header_list>*:not(:last-child) {
       margin: 0 20px 0 0;
@@ -144,6 +185,15 @@
    }
 }
 
+@media(max-width:600px) {
+   .thank {
+      width: 200px;
+      height: 190px;
+      font-size: 28px;
+      line-height: 38px;
+   }
+}
+
 @media (max-width: 578px) {
    .prize1 {
       padding: 150px 0;
@@ -151,6 +201,9 @@
 }
 
 @media (max-width: 501px) {
+   .show {
+      top: -55px;
+   }
    .logo img {
       width: 60px;
    }
