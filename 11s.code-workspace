@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\..\\HTML\\examples\\btn"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "11s"
+	}
+}
