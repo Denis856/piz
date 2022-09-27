@@ -34,6 +34,16 @@
             </ul>
          </nav>
       </header>
+      <div id="pop" class="tan">
+         <div class="thank">Thanks for
+            <br>order
+            <br>ёпт!!!
+            <div onclick="show6()" id="close" class="btn5">
+               <div class="close"></div>
+            </div>
+         </div>
+      </div>
+      <div class="paralax_bg"></div>
       <main id="main" class="main">
          <div id="content" class="content">
             <div class="content_gallery">
@@ -84,6 +94,9 @@
             </div>
          </div>
          <aside id="popup" class="sidebar">
+            <div onclick="show5()" id="close" class="btn4">
+               <div class="close"></div>
+            </div>
             <h1 class="title">Orders</h1>
             <div class="piz">
                <div id="pizza1" class="pizza1 pizza">
@@ -152,12 +165,17 @@
       let pizza3 = document.getElementById('pizza3');
       let pizza4 = document.getElementById('pizza4');
       let img = document.getElementById('img');
+      let content = document.getElementById('content');
+
+      let pop = document.getElementById('pop');
+
 
       function show(){
          popup.classList.add('show');
          main.classList.add('tran');
          pizza1.classList.add('show3');
          pizza1.classList.add('flex');
+         content.classList.add('down');
       }
       function show1(){
          popup.classList.remove('show');
@@ -170,7 +188,26 @@
          pizza3.classList.remove('flex');
          pizza4.classList.remove('show3');
          pizza4.classList.remove('flex');
-         alert("Ваш заказ принят!");
+         content.classList.remove('down');
+         pop.classList.add('open');
+      }
+
+      function show6(){
+         pop.classList.remove('open');
+      }
+
+      function show5(){
+         popup.classList.remove('show');
+         main.classList.remove('tran');
+         pizza1.classList.remove('show3');
+         pizza1.classList.remove('flex');
+         pizza2.classList.remove('show3');
+         pizza2.classList.remove('flex');
+         pizza3.classList.remove('show3');
+         pizza3.classList.remove('flex');
+         pizza4.classList.remove('show3');
+         pizza4.classList.remove('flex');
+         content.classList.remove('down');
       }
 
       function show2(){
@@ -178,18 +215,21 @@
          main.classList.add('tran');
          pizza2.classList.add('show3');
          pizza2.classList.add('flex');
+         content.classList.add('down');
       }
       function show3(){
          popup.classList.add('show');
          main.classList.add('tran');
          pizza3.classList.add('show3');
          pizza3.classList.add('flex');
+         content.classList.add('down');
       }
       function show4(){
          popup.classList.add('show');
          main.classList.add('tran');
          pizza4.classList.add('show3');
          pizza4.classList.add('flex');
+         content.classList.add('down');
       }
    </script>
    <script src="js/jquery-1.9.1.min.js"></script>
