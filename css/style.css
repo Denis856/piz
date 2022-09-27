@@ -50,6 +50,8 @@ a {
    font-family: 'Inter', sans-serif;
    font-style: normal;
    font-weight: 600;
+   background: url(/img/piza.jpg) 50% 100%/ cover no-repeat;
+   background-attachment: fixed;
    width: 100%;
    display: grid;
    grid-template: minmax(100px, auto) 1fr minmax(70px, auto) 1fr;
@@ -341,21 +343,13 @@ a {
    background-color: red;
 }
 
-.paralax_bg {
-   opacity: 0;
-   position: fixed;
-   width: 110%;
-   height: 110%;
-   top: -5%;
-   left: -5%;
-   background: url(/img/piza.jpg) 50% 100%/ cover no-repeat;
-}
+
 
 .wrapper.active .header {
    opacity: 1;
    transition: all 1.0s ease 1.0s;
 }
-.wrapper.active .paralax_bg {
+.wrapper.active {
    opacity: 1;
    transition: all 1.0s ease 0s;
 }
