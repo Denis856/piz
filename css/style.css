@@ -45,18 +45,18 @@ a {
 .container {
    padding: 0 10px;
 }
-
+.rety {
+   background: url(/img/piza.jpg) 50% 100%/ cover no-repeat;
+   background-attachment: fixed;
+}
 .wrapper {
    font-family: 'Inter', sans-serif;
    font-style: normal;
    font-weight: 600;
-   background: url(/img/piza.jpg) 50% 100%/ cover no-repeat;
-   background-attachment: fixed;
    width: 100%;
    display: grid;
    grid-template: minmax(100px, auto) 1fr minmax(70px, auto) 1fr;
    grid-template-areas: 'header' 'main' 'footer';
-   opacity: 0;
 }
 .header {
    grid-area: header;
@@ -349,10 +349,6 @@ a {
 .wrapper.active .header {
    opacity: 1;
    transition: all 1.0s ease 1.0s;
-}
-.wrapper.active {
-   opacity: 1;
-   transition: all 1.0s ease 0s;
 }
 .wrapper.active .content_gallery {
    opacity: 1;
