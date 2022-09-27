@@ -56,6 +56,7 @@ a {
    display: grid;
    grid-template: minmax(100px, auto) 1fr minmax(70px, auto) 1fr;
    grid-template-areas: 'header' 'main' 'footer';
+   opacity: 0;
 }
 .header {
    grid-area: header;
