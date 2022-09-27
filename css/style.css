@@ -64,6 +64,7 @@ a {
    align-items: center;
    padding: 28px 10px;
    z-index: 50;
+   opacity: 0;
 }
 .logo {
    grid-column: 2 / 3;
@@ -134,7 +135,7 @@ a {
    justify-content: space-between;
    padding: 50px 0;
    flex-direction: column;
-   background: #9C7878;
+   background: #804215;
    transform: rotateY(180deg);
    z-index: 1;
 }
@@ -230,6 +231,7 @@ a {
    display: flex;
    justify-content: center;
    margin: 108px 0 0 0;
+   padding-bottom: 50px;
 }
 .order {
    text-transform: uppercase;
@@ -285,6 +287,8 @@ a {
    text-align: center;
    background: #696666;
    padding: 32px 0 53px 0;
+   z-index: 40;
+   opacity: 0;
 }
 .footer_text {
    font-size: 36px;
@@ -294,11 +298,118 @@ a {
    letter-spacing: 0.05em;
    margin: 0 0 41px 0;
 }
-.footer_soces {
-}
 .footer_soces>*:not(:last-child) {
    margin: 0 40px 0 0;
 }
-.soc_link {
+
+.btn4 {
+   display: flex;
+   justify-content: end;
+   padding: 20px 20px 0 0;
 }
 
+.close {
+   position: relative;
+   cursor: pointer;
+   width: 30px;
+   height: 20px;
+}
+.close:before,
+.close:after {
+   content: '';
+   background-color: #000;
+   position: absolute;
+   width: 100%;
+   height: 2px;
+   left: 0;
+   transition: all .5s ease;
+}
+
+.close:before{
+   transform: rotate(45deg);
+   top: 9px;
+}
+
+.close:after {
+   transform: rotate(-45deg);
+   bottom: 9px;
+}
+
+.close:hover:before {
+   background-color: red;
+}
+.close:hover:after {
+   background-color: red;
+}
+
+.paralax_bg {
+   opacity: 0;
+   position: fixed;
+   width: 110%;
+   height: 110%;
+   top: -5%;
+   left: -5%;
+   background: url(/img/piza.jpg) 50% 100%/ cover no-repeat;
+}
+
+.wrapper.active .header {
+   opacity: 1;
+   transition: all 1.0s ease 1.0s;
+}
+.wrapper.active .paralax_bg {
+   opacity: 1;
+   transition: all 1.0s ease 0s;
+}
+.wrapper.active .content_gallery {
+   opacity: 1;
+   transition: all 1.0s ease 1.8s;
+}
+.content_gallery {
+   opacity: 0;
+}
+.wrapper.active .footer {
+   opacity: 1;
+   transition: all 1.0s ease 2.5s;
+}
+
+.thank {
+   width: 350px;
+   height: 190px;
+   background: #ccd2a7;
+   border: 1px solid #000;
+   font-weight: 800;
+   font-size: 36px;
+   line-height: 44px;
+   text-align: center;
+   letter-spacing: 0.05em;
+   color: rgb(18, 41, 13);
+   border-radius: 10px;
+   padding-top: 20px;
+}
+
+.tan {
+   z-index: 50;
+   position: absolute;
+   top: 0;
+   left: 50%;
+   transform: scale(0);
+   text-align: center;
+   color: #333;
+   transition: transform .4s, top .4s;
+}
+
+.cont {
+   display: flex;
+   justify-content: center;
+}
+
+.open {
+   top: 50%;
+   transform: scale(1);
+}
+
+.btn5 {
+   display: flex;
+   justify-content: end;
+   padding-right: 20px;
+}
