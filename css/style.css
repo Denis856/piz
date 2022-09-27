@@ -45,8 +45,8 @@ a {
 .container {
    padding: 0 10px;
 }
-.wrapper {
-   background: url(../img/piza.jpg) 0 0/ cover no-repeat;
+.wrapper 
+   background: url('../img/piza.jpg') 0 0/ cover no-repeat;
    background-attachment: fixed;
    font-family: 'Inter', sans-serif;
    font-style: normal;
