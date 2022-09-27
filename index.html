@@ -9,7 +9,7 @@
    <title>Self 11</title>
 </head>
 <body>
-   <div class="rety" style="background: url(/img/piza.jpg) 0 0/ cover no-repeat">
+   <div class="rety">
       <div class="wrapper">
          <header class="header">
             <a href="#" class="logo">
