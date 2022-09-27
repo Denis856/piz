@@ -104,7 +104,7 @@
       top: -120px;
    }
    .down {
-      transform: translateY(-120px);
+      transform: translateY(-120px) rotate(-180deg);
    }
    .thank {
       width: 300px;
