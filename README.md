@@ -9,154 +9,155 @@
    <title>Self 11</title>
 </head>
 <body>
-   <div class="wrapper">
-      <header class="header">
-         <a href="#" class="logo">
-            <img src="img/logo.png" alt="icon">
-         </a>
-         <nav class="header_menu">
-            <ul class="header_list">
-               <li>
-                  <a href="#" class="header_link">
-                     link
-                  </a>
-               </li>
-               <li>
-                  <a href="#" class="header_link">
-                     link
-                  </a>
-               </li>
-               <li>
-                  <a href="#" class="header_link">
-                     link
-                  </a>
-               </li>
-            </ul>
-         </nav>
-      </header>
-      <div id="pop" class="tan">
-         <div class="thank">Thanks for
-            <br>order
-            <br>ёпт!!!
-            <div onclick="show6()" id="close" class="btn5">
-               <div class="close"></div>
+   <div class="rety">
+      <div class="wrapper">
+         <header class="header">
+            <a href="#" class="logo">
+               <img src="img/logo.png" alt="icon">
+            </a>
+            <nav class="header_menu">
+               <ul class="header_list">
+                  <li>
+                     <a href="#" class="header_link">
+                        link
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#" class="header_link">
+                        link
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#" class="header_link">
+                        link
+                     </a>
+                  </li>
+               </ul>
+            </nav>
+         </header>
+         <div id="pop" class="tan">
+            <div class="thank">Thanks for
+               <br>order
+               <br>ёпт!!!
+               <div onclick="show6()" id="close" class="btn5">
+                  <div class="close"></div>
+               </div>
             </div>
          </div>
+         <main id="main" class="main">
+            <div id="content" class="content">
+               <div class="content_gallery">
+                  <div class="gallery_items">
+                     <div class="gallery_item">
+                        <img src="img/pizza.png" alt="icon">
+                        <div class="prize1">
+                           <div class="prize_text">pizza1 5$</div>
+                           <button onclick="show()" class="prize_btn">add</button>
+                        </div>
+                     </div>
+                     <div class="gallery_item">
+                        <img src="img/pizza.png" alt="icon">
+                        <div class="prize1">
+                           <div class="prize_text">pizza2 5$</div>
+                           <button onclick="show2()" class="prize_btn">add</button>
+                        </div>
+                     </div>
+                     <div class="gallery_item">
+                        <img src="img/pizza.png" alt="icon">
+                        <div class="prize1">
+                           <div class="prize_text">pizza3 5$</div>
+                           <button onclick="show3()" class="prize_btn">add</button>
+                        </div>
+                     </div>
+                     <div class="gallery_item">
+                        <img src="img/pizza.png" alt="icon">
+                        <div class="prize1">
+                           <div class="prize_text">pizza4 5$</div>
+                           <button onclick="show4()" class="prize_btn">add</button>
+                        </div>
+                     </div>
+                     <div class="gallery_item">
+                        <img src="img/pizza.png" alt="icon">
+                        <div class="prize1">
+                           <div class="prize_text">pizza 5$</div>
+                           <a href="#" class="prize_btn">add</a>
+                        </div>
+                     </div>
+                     <div class="gallery_item">
+                        <img src="img/pizza.png" alt="icon">
+                        <div class="prize1">
+                           <div class="prize_text">pizza 5$</div>
+                           <a href="#" class="prize_btn">add</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <aside id="popup" class="sidebar">
+               <div onclick="show5()" id="close" class="btn4">
+                  <div class="close"></div>
+               </div>
+               <h1 class="title">Orders</h1>
+               <div class="piz">
+                  <div id="pizza1" class="pizza1 pizza">
+                     <div class="pizza_img">
+                        <img id="img" src="img/pizza.png" alt="icon">
+                     </div>
+                     <div class="pizza_text">
+                        pizza1 5$
+                     </div>
+                  </div>
+                  <div id="pizza2" class="pizza2 pizza">
+                     <div class="pizza_img">
+                        <img src="img/pizza.png" alt="icon">
+                     </div>
+                     <div class="pizza_text">
+                        pizza2 5$
+                     </div>
+                  </div>
+                  <div id="pizza3" class="pizza3 pizza">
+                     <div class="pizza_img">
+                        <img src="img/pizza.png" alt="icon">
+                     </div>
+                     <div class="pizza_text">
+                        pizza3 5$
+                     </div>
+                  </div>
+                  <div id="pizza4" class="pizza4 pizza">
+                     <div class="pizza_img">
+                        <img src="img/pizza.png" alt="icon">
+                     </div>
+                     <div class="pizza_text">
+                        pizza4 5$
+                     </div>
+                  </div>
+               </div>
+               <div class="btn1">
+                  <a onclick="show1()" href="#" class="order">order</a>
+               </div>
+            </aside>
+         </main>
+         <footer class="footer">
+            <p class="footer_text">
+               Copy 2022
+            </p>
+            <div class="footer_soces">
+               <a href="#" class="soc_link">
+                  <img src="img/soc1.png" alt="">
+               </a>
+               <a href="#" class="soc_link">
+                  <img src="img/soc2.png" alt="">
+               </a>
+               <a href="#" class="soc_link">
+                  <img src="img/soc3.png" alt="">
+               </a>
+               <a href="#" class="soc_link">
+                  <img src="img/soc4.png" alt="">
+               </a>
+            </div>
+         </footer>
       </div>
-      <div class="paralax_bg"></div>
-      <main id="main" class="main">
-         <div id="content" class="content">
-            <div class="content_gallery">
-               <div class="gallery_items">
-                  <div class="gallery_item">
-                     <img src="img/pizza.png" alt="icon">
-                     <div class="prize1">
-                        <div class="prize_text">pizza1 5$</div>
-                        <button onclick="show()" class="prize_btn">add</button>
-                     </div>
-                  </div>
-                  <div class="gallery_item">
-                     <img src="img/pizza.png" alt="icon">
-                     <div class="prize1">
-                        <div class="prize_text">pizza2 5$</div>
-                        <button onclick="show2()" class="prize_btn">add</button>
-                     </div>
-                  </div>
-                  <div class="gallery_item">
-                     <img src="img/pizza.png" alt="icon">
-                     <div class="prize1">
-                        <div class="prize_text">pizza3 5$</div>
-                        <button onclick="show3()" class="prize_btn">add</button>
-                     </div>
-                  </div>
-                  <div class="gallery_item">
-                     <img src="img/pizza.png" alt="icon">
-                     <div class="prize1">
-                        <div class="prize_text">pizza4 5$</div>
-                        <button onclick="show4()" class="prize_btn">add</button>
-                     </div>
-                  </div>
-                  <div class="gallery_item">
-                     <img src="img/pizza.png" alt="icon">
-                     <div class="prize1">
-                        <div class="prize_text">pizza 5$</div>
-                        <a href="#" class="prize_btn">add</a>
-                     </div>
-                  </div>
-                  <div class="gallery_item">
-                     <img src="img/pizza.png" alt="icon">
-                     <div class="prize1">
-                        <div class="prize_text">pizza 5$</div>
-                        <a href="#" class="prize_btn">add</a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <aside id="popup" class="sidebar">
-            <div onclick="show5()" id="close" class="btn4">
-               <div class="close"></div>
-            </div>
-            <h1 class="title">Orders</h1>
-            <div class="piz">
-               <div id="pizza1" class="pizza1 pizza">
-                  <div class="pizza_img">
-                     <img id="img" src="img/pizza.png" alt="icon">
-                  </div>
-                  <div class="pizza_text">
-                     pizza1 5$
-                  </div>
-               </div>
-               <div id="pizza2" class="pizza2 pizza">
-                  <div class="pizza_img">
-                     <img src="img/pizza.png" alt="icon">
-                  </div>
-                  <div class="pizza_text">
-                     pizza2 5$
-                  </div>
-               </div>
-               <div id="pizza3" class="pizza3 pizza">
-                  <div class="pizza_img">
-                     <img src="img/pizza.png" alt="icon">
-                  </div>
-                  <div class="pizza_text">
-                     pizza3 5$
-                  </div>
-               </div>
-               <div id="pizza4" class="pizza4 pizza">
-                  <div class="pizza_img">
-                     <img src="img/pizza.png" alt="icon">
-                  </div>
-                  <div class="pizza_text">
-                     pizza4 5$
-                  </div>
-               </div>
-            </div>
-            <div class="btn1">
-               <a onclick="show1()" href="#" class="order">order</a>
-            </div>
-         </aside>
-      </main>
-      <footer class="footer">
-         <p class="footer_text">
-            Copy 2022
-         </p>
-         <div class="footer_soces">
-            <a href="#" class="soc_link">
-               <img src="img/soc1.png" alt="">
-            </a>
-            <a href="#" class="soc_link">
-               <img src="img/soc2.png" alt="">
-            </a>
-            <a href="#" class="soc_link">
-               <img src="img/soc3.png" alt="">
-            </a>
-            <a href="#" class="soc_link">
-               <img src="img/soc4.png" alt="">
-            </a>
-         </div>
-      </footer>
-   </div>
+      </div>
    <script>
       let popup = document.getElementById('popup');
       let main = document.getElementById('main');
