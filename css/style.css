@@ -50,7 +50,6 @@ a {
    font-family: 'Inter', sans-serif;
    font-style: normal;
    font-weight: 600;
-   background: #EAE4E4;
    width: 100%;
    display: grid;
    grid-template: minmax(100px, auto) 1fr minmax(70px, auto) 1fr;
@@ -411,5 +410,5 @@ a {
 .btn5 {
    display: flex;
    justify-content: end;
-   padding: 20px;
+   padding: 0 20px 20px 20px;
 }
