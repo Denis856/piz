@@ -232,9 +232,9 @@ body {
   border: 1px solid transparent; /*2*/
   background: linear-gradient(5.61deg, #0958FA 4.03%, #0EF0A8 95.97%); /*3*/
   -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) padding-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
-  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0 0) padding-box, linear-gradient(#fff 0 0 0);
           mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) padding-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
-          mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+          mask: linear-gradient(#fff 0 0 0) padding-box, linear-gradient(#fff 0 0 0);
   -webkit-mask-composite: xor;
           mask-composite: xor; /*5'*/
   -webkit-mask-composite: xor;
@@ -700,11 +700,14 @@ body {
   padding: 0 0 8px 0;
 }
 .tags__link {
-  padding: 20px 98px;
+  padding: 20px 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 120%;
+  display: block;
+  text-align: center;
   margin: 0 0 22px 0;
+  width: 274px;
 }
 @media (max-width: 750px) {
   .tags__link {
