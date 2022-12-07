@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\12s"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "13s"
+	}
+}
