@@ -21,4 +21,5 @@ rus.addEventListener('click', ()=>{
 burger.addEventListener('click', ()=> {
    burger.classList.toggle('active');
    list01.classList.toggle('active');
+   list0.classList.remove('active');
 });

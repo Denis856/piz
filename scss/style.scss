@@ -80,9 +80,9 @@ body {
    &__container {
       display: flex;
       align-items: center;
-      padding: 40px 0;
+      padding: 40px 10px;
       @media(max-width: $wd3) {
-         padding: 20px 0;
+         padding: 20px 10px;
       }
    }
    &__part1,
@@ -193,7 +193,7 @@ body {
       margin: 0 0 0 100px;
       @media(max-width: 1150px) {
          display: block;
-         padding: 0 40px 0 0;
+         padding: 0 30px 0 0;
       }
       @media(max-width: 500px) {
          margin: 0 0 0 40px;
@@ -219,6 +219,9 @@ body {
          top: -7px;
       }
       &.active {
+         position: fixed;
+         top: 32px;
+         right: 10px;
          z-index: 20;
          &::before {
             background: #fff;
@@ -247,8 +250,8 @@ body {
       display: flex;
       align-items: center;
       @media(max-width: 1150px) {
-         padding: 70px 0 0 0;
-         position: absolute;
+         padding: 100px 0 0 0;
+         position: fixed;
          top: 0;
          left: 0;
          width: 100%;
@@ -308,6 +311,10 @@ body {
       @media(max-width: $wd3) {
          width: 80%;
          margin: 0 0 80px 0;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         text-align: center;
       }
       @media(max-width: 650px) {
          width: 100%;
@@ -718,6 +725,7 @@ body {
 .footer {
    &__cont1 {
       background: #3D348B;
+      opacity: 0.85;
    }
    &__body1 {
       display: flex;
@@ -725,8 +733,9 @@ body {
       justify-content: space-between;
       padding: 35px 10px;
       @media(max-width: 500px) {
-         text-align: center;
+         text-align: left;
          flex-direction: column;
+         align-items: start;
       }
    }
    &__info {
@@ -796,6 +805,7 @@ body {
       }
       @media(max-width: $wd3) {
          flex-direction: column;
+         align-items: start;
          width: 30%;
          height: 50px;
       }

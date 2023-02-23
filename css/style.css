@@ -89,11 +89,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 40px 0;
+  padding: 40px 10px;
 }
 @media (max-width: 770px) {
   .header__container {
-    padding: 20px 0;
+    padding: 20px 10px;
   }
 }
 .header__part1, .header__part2 {
@@ -243,7 +243,7 @@ body {
 @media (max-width: 1150px) {
   .header__burger {
     display: block;
-    padding: 0 40px 0 0;
+    padding: 0 30px 0 0;
   }
 }
 @media (max-width: 500px) {
@@ -273,6 +273,9 @@ body {
   top: -7px;
 }
 .header__burger.active {
+  position: fixed;
+  top: 32px;
+  right: 10px;
   z-index: 20;
 }
 .header__burger.active::before {
@@ -303,8 +306,8 @@ body {
 }
 @media (max-width: 1150px) {
   .menu__list {
-    padding: 70px 0 0 0;
-    position: absolute;
+    padding: 100px 0 0 0;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -391,6 +394,17 @@ body {
   .home__block_text {
     width: 80%;
     margin: 0 0 80px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
   }
 }
 @media (max-width: 650px) {
@@ -968,6 +982,7 @@ body {
 
 .footer__cont1 {
   background: #3D348B;
+  opacity: 0.85;
 }
 .footer__body1 {
   display: -webkit-box;
@@ -983,11 +998,14 @@ body {
 }
 @media (max-width: 500px) {
   .footer__body1 {
-    text-align: center;
+    text-align: left;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
   }
 }
 .footer__info {
@@ -1089,6 +1107,9 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
     width: 30%;
     height: 50px;
   }
