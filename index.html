@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="fonts/style.css">
+   <link rel="stylesheet" href="css/style2.css">
+   <title>self 18</title>
+</head>
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="container">
+            <nav class="header__body">
+               <a href="#" class="header__logo"><img src="img/logo.png" alt="icon"></a>
+               <ul class="header__list">
+                  <li class="header__item">
+                     <a href="#" class="header__link">Products</a>
+                     <img src="img/arr1.png" alt="icon" class="header__arr header__arr1">
+                     <ul class="header__list2">
+                        <li>Product</li>
+                        <li>Product</li>
+                        <li>Product</li>
+                        <li>Product</li>
+                     </ul>
+                  </li>
+                  <li class="header__item">
+                     <a href="#" class="header__link">Rooms</a>
+                     <img src="img/arr1.png" alt="icon" class="header__arr">
+                     <ul class="header__list2">
+                        <li>Product</li>
+                        <li>Product</li>
+                        <li>Product</li>
+                        <li>Product</li>
+                     </ul>
+                  </li>
+                  <li class="header__item"><a href="#" class="header__link">Inspirations</a></li>
+               </ul>
+               <div class="header__group">
+                  <input type="text" class="header__input" placeholder="Search for minimalist chair">
+                  <img src="img/search.png" alt="search" class="header__search">
+               </div>
+               <div class="header__info">
+                  <a href="#" class="header__link2 header__link21 header__link23"><img src="img/search.png" alt="icon"></a>
+                  <a href="#" class="header__link2 header__link21"><img src="img/favorit.png" alt="icon"></a>
+                  <a href="#basket" class="header__link2 header__link21">
+                     <img src="img/basket.png" alt="icon">
+                     <span id="count"></span>
+                  </a>
+                  <a href="#" class="header__link2 header__link22"><img src="img/user.png" alt="icon"></a>
+                  <div class="header__burger"><span></span></div>
+               </div>
+            </nav>
+         </div>
+      </header>
+      <main class="page">
+         <div class="home">
+            <div class="home__yellow"></div>
+            <div class="container">
+               <div class="home__body">
+                  <div class="home__btns">
+                     <div class="home__btn0" onclick="btn_slide(1)"></div>
+                     <div class="home__btn0" onclick="btn_slide(2)"></div>
+                     <div class="home__btn0" onclick="btn_slide(3)"></div>
+                  </div>
+                  <div class="home__arrows">
+                     <button class="home__arrow left" onclick="side_slide(-1)">
+                        <i class="home__icon icon-arr"></i>
+                     </button>
+                     <button class="home__arrow right" onclick="side_slide(1)">
+                        <i class="home__icon icon-arr"></i>
+                     </button>
+                  </div>
+                  <div class="home__items">
+                     <img src="img/img11.jpg" alt="icon" class="home__img0">
+                     <img src="img/img11.jpg" alt="icon" class="home__img0">
+                     <img src="img/img11.jpg" alt="icon" class="home__img0">
+                     <div class="home__block1">
+                        <h1 class="home__title">High-Quality Furniture Just For You</h1>
+                        <p class="home__text1">
+                           Our furniture is made from selected and best quality materials that are suitable for your dream home
+                        </p>
+                        <button class="home__btn">Shop Now</button>
+                     </div>
+                     <div class="home__block2">
+                        <p class="home__text2">Bohauss</p>
+                        <p class="home__text3">Luxury big sofa 2-seat</p>
+                        <div class="home__block0">
+                           <p class="home__text4">Rp 17.000.000</p>
+                           <i class="home__icon0 icon-arr"></i>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="functions">
+            <div class="container">
+               <div class="functions__items">
+                  <div class="functions__item">
+                     <i class="functions__icon icon-img21"></i>
+                     <p class="functions__text">High Quality<br><span>crafted from top materials</span></p>
+                  </div>
+                  <div class="functions__item">
+                     <i class="functions__icon icon-img22"></i>
+                     <p class="functions__text">Warrany Protection<br><span>Over 2 years</span></p>
+                  </div>
+                  <div class="functions__item">
+                     <i class="functions__icon icon-img23"></i>
+                     <p class="functions__text">Free Shipping<br><span>Order over 150 $</span></p>
+                  </div>
+                  <div class="functions__item">
+                     <i class="functions__icon icon-img24"></i>
+                     <p class="functions__text">24 / 7 Support<br><span>Dedicated support</span></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="products">
+            <div class="container">
+               <div class="products__body">
+                  <h2 class="products__title title">Our Products</h2>
+                  <div id="products__items" class="products__items">
+                  </div>
+                  <button class="products__btn">Show More</button>
+               </div>
+            </div>
+         </div>
+
+         <div id="basket" class="basket">
+            <div class="container">
+               <p class="basket__title title">Basket</p>
+               <div id="my_item"></div>
+               <div class="foot">
+                  <h3 class="foot__title">Total</h3>
+                  <div id="total">$ 0.00</div>
+               </div>
+            </div>
+         </div>
+
+         <div class="tricks">
+            <div class="container tricks__body">
+               <h3 class="tricks__title title">Tips & Tricks</h3>
+               <button class="tricks__btn left" id="left">
+                  <i class="tricks__icon icon-arr left_icon"></i>
+               </button>
+               <button class="tricks__btn right" id="right">
+                  <i class="tricks__icon icon-arr right_icon"></i>
+               </button>
+               <div class="tricks__items">
+                  <div class="tricks__item item4">
+                     <img src="img/img31.jpg" alt="icon" class="item4__img">
+                     <div class="item4__block_text">
+                        <p class="item4__title">How to create a living room to love</p>
+                        <p class="item4__date">20 jan 2020</p>
+                     </div>
+                  </div>
+                  <div class="tricks__item item4">
+                     <img src="img/img32.jpg" alt="icon" class="item4__img">
+                     <div class="item4__block_text">
+                        <p class="item4__title">Solution for clean look working space</p>
+                        <p class="item4__date">10 jan 2020</p>
+                     </div>
+                  </div>
+                  <div class="tricks__item item4">
+                     <img src="img/img33.jpg" alt="icon" class="item4__img">
+                     <div class="item4__block_text">
+                        <p class="item4__title">Make your cooking activity more fun with good setup</p>
+                        <p class="item4__date">20 jan 2020</p>
+                     </div>
+                  </div>
+                  <div class="tricks__item item4">
+                     <img src="img/img33.jpg" alt="icon" class="item4__img">
+                     <div class="item4__block_text">
+                        <p class="item4__title">Make your cooking activity more fun with good setup</p>
+                        <p class="item4__date">20 jan 2020</p>
+                     </div>
+                  </div>
+                  <div class="tricks__item item4">
+                     <img src="img/img33.jpg" alt="icon" class="item4__img">
+                     <div class="item4__block_text">
+                        <p class="item4__title">Make your cooking activity more fun with good setup</p>
+                        <p class="item4__date">20 jan 2020</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="furniture">
+            <div class="furniture__container">
+               <p class="furniture__surtitle">Share your setup with</p>
+               <h4 class="furniture__title title">#FuniroFurniture</h4>
+               <div class="furniture__body">
+                  <div class="furniture__items">
+                     <div class="furniture__items1">
+                        <img src="img/img41.jpg" alt="icon" class="furniture__img">
+                        <img src="img/img42.jpg" alt="icon" class="furniture__img">
+                     </div>
+                     <div class="furniture__items2">
+                        <img src="img/img43.jpg" alt="icon" class="furniture__img">
+                        <img src="img/img44.jpg" alt="icon" class="furniture__img">
+                     </div>
+                  </div>
+                  <div class="furniture__center">
+                     <img src="img/img45.jpg" alt="icon" class="furniture__img">
+                  </div>
+                  <div class="furniture__items">
+                     <div class="furniture__items1">
+                        <img src="img/img46.jpg" alt="icon" class="furniture__img">
+                        <img src="img/img47.jpg" alt="icon" class="furniture__img">
+                     </div>
+                     <div class="furniture__items2">
+                        <img src="img/img48.jpg" alt="icon" class="furniture__img">
+                        <img src="img/img49.jpg" alt="icon" class="furniture__img">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="footer">
+         <div class="container">
+            <div class="footer__columns">
+               <div class="footer__column footer__column1">
+                  <div class="footer__title footer__title0">Furino</div>
+                  <div class="footer__block">
+                     <p class="footer__text">
+                        Worldwide furniture store since 2020. We sell over 1000+ branded products on our website
+                     </p>
+                     <a href="#" class="footer__link">
+                        <i class="footer__icon icon-loc"></i>
+                        Sawojajar Malang, Indonesia
+                     </a>
+                     <a href="tel:+62894563455" class="footer__link">
+                        <i class="footer__icon icon-phone"></i>
+                        +6289 456 3455
+                     </a>
+                     <a href="#" class="footer__link">www.funiro.com</a>
+                  </div>
+               </div>
+               <div class="footer__column">
+                  <p class="footer__title footer__title0">Menu</p>
+                  <div class="footer__block">
+                     <a href="#" class="footer__link">Products</a>
+                     <a href="#" class="footer__link">Rooms</a>
+                     <a href="#" class="footer__link">Inspirations</a>
+                     <a href="#" class="footer__link">About Us</a>
+                     <a href="#" class="footer__link">Terms & Policy</a>
+                  </div>
+               </div>
+               <div class="footer__column">
+                  <p class="footer__title footer__title0">Account</p>
+                  <div class="footer__block">
+                     <a href="#" class="footer__link">My Account</a>
+                     <a href="#" class="footer__link">Checkout</a>
+                     <a href="#" class="footer__link">My Cart</a>
+                     <a href="#" class="footer__link">My catalog</a>
+                  </div>
+               </div>
+               <div class="footer__column">
+                  <p class="footer__title footer__title0">Stay Connected</p>
+                  <div class="footer__block">
+                     <a href="#" class="footer__link">Facebook</a>
+                     <a href="#" class="footer__link">Instagram</a>
+                     <a href="#" class="footer__link">Twitter</a>
+                  </div>
+               </div>
+               <div class="footer__column">
+                  <p class="footer__title footer__title0">Stay Updated</p>
+                  <div class="footer__block">
+                     <div class="footer__group">
+                        <input type="text" class="footer__input" placeholder="Enter your email">
+                        <button class="footer__tel">
+                           <img src="img/teleg.png" alt="icon" class="footer__teleg">
+                        </button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </div>
+   <script src="js/jquery-1.9.1.min.js"></script>
+   <script src="js/script.js"></script>
+   <script src="js/footer.js"></script>
+   <script src="js/slider.js"></script>
+   <script src="js/slider2.js"></script>
+   <script src="js/cards.js"></script>
+</body>
+</html>
