@@ -659,7 +659,6 @@
 
 .basket {
   padding: 120px 0;
-  display: none;
 }
 @media (max-width: 770px) {
   .basket {

@@ -149,16 +149,20 @@ function delElem(a) {
    displayCard();
 }
 
+
+document.getElementById('my_item').innerHTML = 'Your card is empty';
+
 function displayCard(a){
    let j = 0, total = 0;
    document.getElementById('count').innerHTML = cart.length;
    if(cart.length == 0) {
       document.getElementById('count').innerHTML = '';
-      document.querySelector('.basket').classList.remove('active');
       document.getElementById('my_item').innerHTML = 'Your card is empty';
       document.getElementById('total').innerHTML = "$ "+0+" .00";
    } else {
-      document.getElementById('my_item').innerHTML = cart.map((items)=>{
+      var erty = document.getElementById('my_item');
+      erty.innerHTML = cart.map((items)=>{
+         erty = [... new Set(cart.map((items) => {return items;}))];
          document.querySelector('.basket').classList.add('active');
          var {img0, title, text, sale_class, sale_text, sale_sing, price} = items;
          total = total + price;

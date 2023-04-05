@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\self_17"
+		},
+		{
+			"path": "..\\..\\..\\..\\HTML\\examples\\product-slider\\product-slider\\product-slider"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "self_18"
+	}
+}
