@@ -42,6 +42,9 @@ body {
    font-family: 'Roboto', sans-serif;
    font-weight: 400;
    color: $color;
+   &.active {
+      overflow: hidden;
+   }
 }
 
 .wrapper {
@@ -61,7 +64,7 @@ body {
    left: 0;
    width: 100%;
    background-color: rgba(255, 255, 255, 0.852);
-   z-index: 10;
+   z-index: 11;
    @media(max-width: $wd2) {
       padding: 30px 0;
    }
@@ -490,24 +493,77 @@ body {
          font-size: 10px;
       }
    }
+   .container {
+      position: relative;
+   }
    &__items {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(275px, auto));
-      gap: 1.5rem;
-      @media(max-width: $wd3) {
-         display: flex;
-         justify-content: space-between;
-         flex-wrap: wrap;
-         gap: 0;
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      &::-webkit-scrollbar {
+         display: none;
+      }
+      @media(max-width: $wd1) {
+         width: 917px;
+         margin: 0 auto;
+      }
+      @media(max-width: 950px) {
+         width: 596px;
+      }
+      @media(max-width: 770px) {
+         width: 275px;
+      }
+      @media(max-width: 330px) {
+         width: 220px;
+      }
+   }
+   &__arrow {
+      position: absolute;
+      top: 50%;
+      z-index: 10;
+      width: 50px;
+      height: 50px;
+      background-color: #fff;
+      border-radius: 50%;
+      border: 1px solid rgb(172, 166, 166);
+      @media(max-width: 420px) {
+         width: 40px;
+         height: 40px;
+      }
+   }
+   .left {
+      left: 0;
+      img {
+         transform: rotate(-180deg);
+      }
+      @media(max-width: $wd1) {
+         left: 20px;
+      }
+      @media(max-width: 420px) {
+         left: 0;
+      }
+   }
+   .right {
+      right: 0;
+      @media(max-width: $wd1) {
+         right: 20px;
+      }
+      @media(max-width: 420px) {
+         right: 0;
       }
    }
    &__item {
+      flex: 0 0 auto;
       position: relative;
       font-size: 15px;
       line-height: 18 / 15 * 100%;
       color: #1A1A1A;
       width: 275px;
       cursor: pointer;
+      margin-right: 43px;
+      &:last-child {
+         margin-right: 0;
+      }
       &.hide {
          display: none;
       }
@@ -516,9 +572,11 @@ body {
       }
       @media(max-width: $wd3) {
          overflow: hidden;
-         width: 47%;
          margin-bottom: 20px;
          font-size: calc(10px + (15 - 10) * ((100vw - 320px) / (650 - 320)));
+      }
+      @media(max-width: 330px) {
+         width: 220px;
       }
       @media(max-width: 320px) {
          font-size: 10px;
